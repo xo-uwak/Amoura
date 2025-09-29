@@ -28,7 +28,7 @@ nav{
 }
 .navLink{
   flex: 1;
-  text-align: right;
+  text-align: center;
 }
 .navLink ul li{
   list-style: none ;
@@ -142,11 +142,13 @@ nav .fa {
   margin: 10px;
 }
 }
+
+/* CSS for Exclusive offers*/
 .exOffers{
   margin: auto;
-  padding-top: 100px;
+  padding-top: 70px;
   padding-bottom: 20px;
-  min-width: 1100px;
+  
   background-color: rgb(252, 246, 210);
 }
 .exTitle{
@@ -170,7 +172,7 @@ nav .fa {
 .offers{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 15px;
+  gap: 30px;
   padding-left: 10%;
   padding-right: 10%;
   margin-top: 3%;
@@ -188,7 +190,7 @@ nav .fa {
 }
 
 .exImg{
-  height: 200px;
+  height: 100%;
   display: flex;
   align-items: center;
  justify-content: center;
@@ -264,3 +266,132 @@ nav .fa {
   font-weight: 900;
 }
 
+/* CSS for Catalog*/
+.catalog{
+  background-color: rgb(250, 237, 169);;
+}
+.catalogTitle{
+  text-align: center;
+  color:rgb(97, 10, 27);
+  font-size: 30px;
+  font-weight: 900;
+  background-color: rgb(250, 237, 169);
+}
+.catalogNav{
+  text-align: center;
+  background-color:rgb(97, 10, 27);
+  padding:8px ;
+  
+}
+.catalogNav ul li{
+  display: inline-block;
+  padding-right: 25px;
+  font-size: 20px;
+  color: rgb(250, 237, 169);
+}
+
+.catalogNav ul li a{
+  text-decoration: none;
+  color: rgb(250, 237, 169);
+  cursor: pointer;
+}
+.catalogNav ul li a:hover{
+  text-decoration: underline;
+}
+
+.menuHeading{
+  text-align: center;
+  font-size: 20px ;
+  
+}
+
+.catalogBody{
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color:rgb(97, 10, 27);
+}
+.sweetTreats p{
+  text-align: center;
+  font-size: 17px;
+}
+.menuSubheading{
+  font-size: 50px;
+  padding-top: 30px;
+}
+
+
+.itembody{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 15px;
+}
+
+.item{
+  border: 100px;
+  border-color: purple;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+  box-shadow: 0 6px 12px rgba(201,79,79,0.18);
+}
+.itemImg{
+  display: flex;
+ position: relative;
+ height: 100%;
+  display: flex;
+  align-items: center;
+ justify-content: center;
+ position: relative;
+}
+
+.itemTxt{
+  padding:16px 16px 20px;
+  display:flex; 
+  flex-direction:column; 
+  gap:8px;
+  background-color: #f8f2f2;
+}
+
+.itemTxt h4{
+font-size: 25px;
+}
+.itemTxt p{
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+.itemTxt button{
+  background-color:rgb(97, 10, 27);
+  color: rgb(253, 245, 185);
+  width: 80px;
+  height: 30px;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 500px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.itemImg img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+
+}
+
+@media (max-width:700px) {
+  .catalog{
+    padding: 20px;
+  }
+
+  catalogBody{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .menuSubheading{
+    font-size: 30px;
+  }
+}
