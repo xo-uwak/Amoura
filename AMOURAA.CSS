@@ -306,18 +306,18 @@ nav .fa {
 }
 
 .catalogBody{
-  padding-top: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 20px auto;
   color:rgb(97, 10, 27);
+
+
 }
 .sweetTreats p{
   text-align: center;
   font-size: 17px;
 }
-.menuSubheading{
-  font-size: 50px;
+.cakes{
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 
@@ -333,7 +333,6 @@ nav .fa {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  background-color: blue;
   box-shadow: 0 6px 12px rgba(201,79,79,0.18);
 }
 .itemImg{
@@ -365,14 +364,18 @@ font-size: 25px;
 .itemTxt button{
   background-color:rgb(97, 10, 27);
   color: rgb(253, 245, 185);
-  width: 80px;
-  height: 30px;
-  font-size: 10px;
+  width: 100px;
+  height: 35px;
+  font-size: 13px;
   font-weight: bold;
-  border-radius: 500px;
+  border-radius: 10px;
   text-align: center;
   align-items: center;
   cursor: pointer;
+}
+.itemTxt button:hover{
+  background-color: rgb(253, 245, 185);
+  color: rgb(97, 10, 27);
 }
 
 .itemImg img{
@@ -395,3 +398,447 @@ font-size: 25px;
     font-size: 30px;
   }
 }
+
+.sweets{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  
+}
+.sweetsImg{
+  display: flex;
+ position: relative;
+ height: 100%;
+  align-items: center;
+ justify-content: center;
+ position: relative;
+}
+.sweetsImg img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* about page css*/
+
+.abtHeader{
+  background-color:rgb(97, 10, 27) ;
+  padding: 30px 10px;
+  text-align: center;
+}
+ .abtHeader h2{
+  color: rgb(253, 245, 185);
+  margin: 0;
+ font-size: 30px;
+ }
+
+
+.abtBody{
+  text-align: center;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background:rgb(253, 245, 185);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(244, 72, 72, 0.1);
+}
+.abtBody h3{
+font-size: 25px;
+text-align: center;
+color:rgb(97, 10, 27);
+}
+.abtBody p{
+  font-size: 17px;
+  text-align: center;
+  color:rgb(40, 35, 36);
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+.abtBody strong{
+  color: rgb(97, 10, 27);
+}
+
+.abtUs{
+  min-height: 90vh;
+  position: relative;
+  background-color: rgb(252, 246, 210);
+}
+
+.abtStats{
+  display: flex;
+  
+  gap: 100px;
+  text-align: center; 
+ justify-content: center;
+}
+
+.stats{
+  display: flex;
+ flex-direction:column;
+ padding-top:2%;
+}
+
+.stats h4{
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+color: rgb(97, 10, 27);
+}
+.stats p{
+  font-size: 17px;
+  color: rgb(97, 10, 27);
+}
+
+@media (max-width:700px) {
+  .abtStats{
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+  .abtStats h4{
+    font-size: 30px;
+  }
+  .abtStats p{
+    font-size: 17px;
+  }
+}
+
+/*gallery*/
+
+.gallery, .gallery2{
+  display: flex;
+
+}
+.productGallery, .productGallery2{
+  display: flex;
+  
+}
+
+.galImg{
+  width: 100%;
+  height: auto;
+}
+
+
+@media (max-width:700px) {
+  .gallery{
+    flex-direction: column;
+  
+  
+ }
+ .galImg{
+  width: 100%;
+  height: auto;
+ }
+
+ .gallery2{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+}
+
+/*reviews*/
+
+.displayImg{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  
+}
+
+.reviewBox{
+  display: flex;
+  margin: 40px auto;
+ padding-left: 50px;
+ padding-right: 50px;
+ gap: 50px;
+  
+}
+
+.review{
+  display: flex;
+  flex-direction: column;
+}
+.customerId{
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+}
+.reviewTxt p{
+  color:black;
+  font-size: 17px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.reviewBody{
+  background-color:rgb(253, 245, 185);
+  padding-top: 60px;
+  padding-bottom: 60px;
+ 
+}
+.reviewBody h2{
+  padding-top: 20px;
+  font-size: 18px;
+  color: black;
+  text-align:center;
+}
+
+.reviewHead{
+  font-size: 30px;
+  color: rgb(97, 10, 27);
+  text-align:center;
+  font-weight: 900;
+}
+
+.customerName h3{
+  font-size: 20px;
+  color:  rgb(97, 10, 27);
+  font-weight: 900;
+  padding-left: 15px;
+  padding-top: 10px;
+
+}
+
+.customerName p{
+  font-size: 15px;
+  color: black;
+  padding-left: 15px;
+ 
+}
+
+@media (max-width:700px) {
+  .reviewBox{
+    flex-direction: column;
+    gap: 1.5rem;
+   
+  }
+  .reviewTxt p{
+    color:black;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align:center;
+  }
+
+  .reviewBody{
+    padding-bottom: 20px;
+}}
+
+
+/* custom order css*/
+
+.orderForm{
+  background-color: rgb(253, 245, 185);
+  padding-bottom: 20px;
+}
+
+.orderForm h2{
+  font-size: 30px;
+  color: rgb(97, 10, 27);
+  text-align: center;
+  padding: 50px;
+ 
+}
+
+.orderForm form{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 0 1rem;
+}
+.details{
+  text-align: left;
+}
+
+.details label{
+  display: block;
+  margin: 0.5rem;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.details input, .details select, .details textarea{
+  width: 94%;
+  padding: 1rem;
+  border: 1px solid rgb(97, 10, 27);
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.orderForm button {
+  height: 40px;
+  width: 150px;
+  padding: 0.75rem;
+  background-color: rgb(97, 10, 27);
+  color: rgb(253, 245, 185);
+  font-size:17px;
+  font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.orderForm button:hover {
+  background-color: rgb(253, 245, 185);
+  color: rgb(97, 10, 27);
+  border: 2px solid rgb(97, 10, 27);
+}
+.btnDiv{
+  padding-top: 70px;
+}
+
+@media (max-width:700px) {
+  .btnDiv{
+    padding-top: 0.5px;
+  }
+  .orderForm form {
+    padding: 0 1rem;
+}
+}
+
+.contactPage{
+  background-color: rgb(97, 10, 27);
+  height: 50vh;
+  color:rgb(253, 245, 185);
+}
+
+.amouraImg{
+  width: 300px;
+  height: 100px;
+}
+
+.contacts{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left:  auto;
+  margin-right: auto;
+  max-width: 1400px;
+  padding: 20px;
+  padding-top: 50px;
+}
+
+
+.quickLinks, .services, .contactInfo{
+  display: flex;
+  flex-direction: column;
+}
+.quickLinks ul li a, .services ul li a {
+ font-size: 20px;
+ text-decoration: none;
+ line-height: 35px;
+ color:rgb(253, 245, 185);
+ }
+
+
+.services ul li, .quickLinks ul li {
+  list-style: none ;
+  position: relative;}
+
+.heading {
+  font-size: 25px;
+  text-align: left;
+}
+
+.contactInfo p{
+font-size: 17px;
+}
+.contactInfo{
+  line-height: 30px;
+}
+
+.amoura p{
+  font-size: 17px;
+  text-align: center;
+  font-style: italic;
+  font-family: cursive ;
+ 
+}
+.socialsLogo{
+  width: 100px;
+  height: 50px;
+}
+
+@media (max-width:700px) {
+.contacts{
+  display: flex;
+  flex-direction:column;
+  gap: 20px;
+  margin-left:  auto;
+  margin-right: auto;
+  padding: 20px;
+  padding-top: 50px;}
+
+  .contactPage{
+  background-color: rgb(97, 10, 27);
+  height: 100%;
+  color:rgb(253, 245, 185);
+  }
+  .feedBack  textarea{
+  width: 80%;}
+
+
+}
+
+   .feedBack label{
+    display: block;
+    margin: 0.5rem;
+    font-weight: 600;
+    font-size:p 17px;
+   }
+  
+  .feedBack  textarea{
+    width: 95%;
+    padding: 1rem;
+    border: 1px solid rgb(97, 10, 27);
+    border-radius: 8px;
+    font-size: 13px;
+  }
+
+  .feedBack {
+    margin: 2px auto;
+    max-width: 700px;
+  }
+  .feedBack label{
+    font-size: 20px;
+  }
+
+  .feedBackBtn{
+    height: 30px;
+    width: 80px;
+    padding: .50rem;
+    background-color:rgb(253, 245, 185); 
+    color:  rgb(97, 10, 27);
+    font-size:17px;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .feedBackBtn:hover {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+  }
+
+
+
+
+footer{
+  background-color: rgb(253, 245, 185);
+  color: rgb(97, 10, 27);
+  height: 55px;
+  
+}
+.footer{
+  font-size: 15px;
+  text-align: center;
+  font-weight: 600;
+  padding: 20px;
+}
+
