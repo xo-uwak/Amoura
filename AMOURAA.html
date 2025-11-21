@@ -258,10 +258,30 @@
       <h2>Reviews</h2>
       <p class="reviewHead">What Customers Say</p>
 
-      <div class="reviewBox">
+      <div class="reviewBox" id="reviewsContainer">
+
+
+
+
+        <!--<div class="review" id="reviewsContainer">
+          <div class="reviewTxt">
+            <p  id="review-input">Amoura is the best dessert shop in town. Their cakes are to die for and the service  is just to good. It is the best place to celebrate your special moments. </p>
+          </div>
+          <div class="customerId">
+            <div class="Photo">
+              <img src="images/kimia-kazemi-WZQWc5iGVCg-unsplash.jpg" alt="" class="displayImg">
+            </div>
+            <div class="customerName">
+              <h3>Jhames Uwak</h3>
+              <p>Customer</p>
+            </div>
+          </div>
+
+        </div> 
+
         <div class="review">
           <div class="reviewTxt">
-            <p>wonderful wonderful delicious cake all things bright and wonderful all creatures great and small all things wise and wonderful the lord good made them all.</p>
+            <p>The cake and pesteries are made with so much love that you taste it in every bite. </p>
           </div>
           <div class="customerId">
             <div class="Photo">
@@ -275,8 +295,8 @@
 
         </div>
 
-        <div class="review">
-          <div class="reviewTxt">
+        <div class="review" id="reviewsContainer">
+          <div class="reviewTxt" id="reviewTxt">
             <p>wonderful wonderful delicious cake all things bright and wonderful all creatures great and small all things wise and wonderful the lord good made them all.</p>
           </div>
           <div class="customerId">
@@ -289,23 +309,7 @@
             </div>
           </div>
 
-        </div>
-
-        <div class="review">
-          <div class="reviewTxt">
-            <p>wonderful wonderful delicious cake all things bright and wonderful all creatures great and small all things wise and wonderful the lord good made them all.</p>
-          </div>
-          <div class="customerId">
-            <div class="Photo">
-              <img src="images/kimia-kazemi-WZQWc5iGVCg-unsplash.jpg" alt="" class="displayImg">
-            </div>
-            <div class="customerName">
-              <h3>Jhames Uwak</h3>
-              <p>Customer</p>
-            </div>
-          </div>
-
-        </div>
+        </div>-->
 
       </div>
     
@@ -407,11 +411,22 @@
         <div class="amoura">
           <img src="amoura logo/logo small.png" class="amouraImg">
 
-          <div class="feedBack">
+          <div class="feedBack" >
             <label for="notes">Leave a review</label>
-            <textarea id="notes" name="notes" rows="3" placeholder="Tell us your experience..."></textarea>
-            <button class="feedBackBtn" type="submit"> Send</button>
-         </div>
+            <input type="text" class="Name" placeholder="Your name" required id="reviewName" name="customerName">
+            <input type="email" class="customersMail" name="customeremail" placeholder="Your E-mail address" required>
+      
+            <textarea id="reviewInput" name="Review" rows="3" placeholder="Tell us your experience..."></textarea> <br>
+            <select id="reviewRating">
+              <option value="" >Select Rating</option>
+              <option value="1">⭐</option>
+              <option value="2">⭐⭐</option>
+              <option value="3">⭐⭐⭐</option>
+              <option value="4">⭐⭐⭐⭐</option>
+              <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+            <button class="feedBackBtn" type="submit" id="review-submit-btn" onclick="addReview()"> Send</button>
+          </div>
          <!-- <p>"For the love of treats and pastries,amoura provides <br> the most delicious heart melting  treats and bakes.<br>  Every order is the beginning of a glorious tale"</p>-->
         </div>
 
@@ -449,11 +464,6 @@
           <div class="socials">
             <a href="stats.html"><img src="amoura logo/socials.png" alt="" class="socialsLogo" usemap="#socialsmap"></a>
 
-            <map name="socialsmap">
-              <area shape="circle" coords="188,473,356,477" target="_blank" href="offer.html" title="FB" >
-              <area shape="circle" coords="712,484,185" target="_blank" href="stats.html" title="IG" >
-              <area shape="circle" coords="1229,491,184" target="_blank" href="ddd.html" title="X" >
-            </map>
           </div>
         </div>
       </div>

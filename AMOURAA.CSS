@@ -540,9 +540,10 @@ color: rgb(97, 10, 27);
 /*reviews*/
 
 .displayImg{
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+  margin-top: 10px;
   
 }
 
@@ -563,6 +564,7 @@ color: rgb(97, 10, 27);
   display: flex;
   padding: 15px;
   justify-content: center;
+  padding-bottom: 0;
 }
 .reviewTxt p{
   color:black;
@@ -596,10 +598,38 @@ color: rgb(97, 10, 27);
   color:  rgb(97, 10, 27);
   font-weight: 900;
   padding-left: 15px;
-  padding-top: 10px;
+  padding-top: 5px;
+
+}
+.stars { 
+  color: gold;
+  
+  margin: 5px;
+   font-size: 18px; 
+   margin-bottom: 0;
+}
+
+.editReviewBtn{
+  padding: 2px;
+  font-size: 12px;
+  color: rgb(97, 10, 27);
+  border:1px solid rgb(97, 10, 27);
+  border-radius: 10px;
+    background-color: rgb(253, 245, 185);
+    width: 50px;
+    margin: 5px;
+}
+.editReviewBtn:hover{
+cursor: pointer;
+background-color:  rgb(97, 10, 27);
+color:  rgb(253, 245, 185);
 
 }
 
+.actions{
+justify-content: center;
+ margin-left: 150px;
+}
 .customerName p{
   font-size: 15px;
   color: black;
@@ -701,7 +731,7 @@ color: rgb(97, 10, 27);
 
 .contactPage{
   background-color: rgb(97, 10, 27);
-  height: 50vh;
+  height: 60vh;
   color:rgb(253, 245, 185);
 }
 
@@ -782,29 +812,48 @@ font-size: 17px;
 
 
 }
+.amoura{
+  width: 350px;
+}
+  #reviewRating{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(97, 10, 27);
+    font-size: 17px;
+    color: rgb(253, 245, 185);
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid rgb(253, 245, 185);
+  }
 
    .feedBack label{
     display: block;
     margin: 0.5rem;
     font-weight: 600;
-    font-size:p 17px;
+    font-size:20px;
    }
   
   .feedBack  textarea{
-    width: 95%;
+    width: 90%;
     padding: 1rem;
     border: 1px solid rgb(97, 10, 27);
     border-radius: 8px;
     font-size: 13px;
+    margin: 2px;
   }
 
   .feedBack {
     margin: 2px auto;
-    max-width: 700px;
+    
   }
-  .feedBack label{
-    font-size: 20px;
+  .feedBack input{
+    width: 90%;
+   padding: 1rem;
+    border: 1px solid rgb(97, 10, 27);
+    border-radius: 8px;
+    font-size: 13px;
+    margin: 2px;
   }
+
 
   .feedBackBtn{
     height: 30px;
@@ -818,6 +867,7 @@ font-size: 17px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
+   margin: 5px;
     transition: 0.3s ease;
   }
   .feedBackBtn:hover {
